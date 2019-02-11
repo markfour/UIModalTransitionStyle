@@ -43,18 +43,25 @@ extension RootViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
     
-    let viewController = UIViewController()
+    let storyborad = UIStoryboard(name: "Main", bundle: nil)
+    let viewController = storyborad.instantiateViewController(withIdentifier: "ModelViewController")
     
     let style = Style(rawValue: indexPath.row)
     switch style! {
     case .coverVertical:
       viewController.title = "coverVertical"
+      viewController.modalTransitionStyle = .coverVertical
     case .flipHorizontal:
       viewController.title = "flipHorizontal"
+      viewController.modalTransitionStyle = .flipHorizontal
     case .crossDissolve:
       viewController.title = "crossDissolve"
+      viewController.modalTransitionStyle = .crossDissolve
     case .partialCurl:
       viewController.title = "partialCurl"
+      viewController.modalTransitionStyle = .partialCurl
     }
+    
+  present(viewController, animated: true, completion: nil)
   }
 }

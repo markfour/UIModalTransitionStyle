@@ -14,6 +14,7 @@
 		A07919C822118AB200FDEAB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07919C622118AB200FDEAB3 /* LaunchScreen.storyboard */; };
 		A07919D322118AB200FDEAB3 /* UIModalTransitionStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07919D222118AB200FDEAB3 /* UIModalTransitionStyleTests.swift */; };
 		A07919DE22118AB200FDEAB3 /* UIModalTransitionStyleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07919DD22118AB200FDEAB3 /* UIModalTransitionStyleUITests.swift */; };
+		A07919EE2211DDF000FDEAB3 /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07919ED2211DDF000FDEAB3 /* ModelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A07919D922118AB200FDEAB3 /* UIModalTransitionStyleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIModalTransitionStyleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07919DD22118AB200FDEAB3 /* UIModalTransitionStyleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModalTransitionStyleUITests.swift; sourceTree = "<group>"; };
 		A07919DF22118AB200FDEAB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A07919ED2211DDF000FDEAB3 /* ModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				A07919BD22118AB100FDEAB3 /* AppDelegate.swift */,
+				A07919BF22118AB100FDEAB3 /* RootViewController.swift */,
+				A07919ED2211DDF000FDEAB3 /* ModelViewController.swift */,
 				A07919C422118AB200FDEAB3 /* Assets.xcassets */,
 				A07919C922118AB200FDEAB3 /* Info.plist */,
 				A07919C622118AB200FDEAB3 /* LaunchScreen.storyboard */,
 				A07919C122118AB100FDEAB3 /* Main.storyboard */,
-				A07919BF22118AB100FDEAB3 /* RootViewController.swift */,
 			);
 			path = UIModalTransitionStyle;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			files = (
 				A07919C022118AB100FDEAB3 /* RootViewController.swift in Sources */,
 				A07919BE22118AB100FDEAB3 /* AppDelegate.swift in Sources */,
+				A07919EE2211DDF000FDEAB3 /* ModelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

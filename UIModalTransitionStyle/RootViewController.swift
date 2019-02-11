@@ -37,6 +37,24 @@ extension RootViewController: UITableViewDataSource {
     
     return cell
   }
-  
+}
 
+extension RootViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
+    
+    let viewController = UIViewController()
+    
+    let style = Style(rawValue: indexPath.row)
+    switch style! {
+    case .coverVertical:
+      viewController.title = "coverVertical"
+    case .flipHorizontal:
+      viewController.title = "flipHorizontal"
+    case .crossDissolve:
+      viewController.title = "crossDissolve"
+    case .partialCurl:
+      viewController.title = "partialCurl"
+    }
+  }
 }
